@@ -64,7 +64,7 @@ details>div{padding:.2rem 1.5rem 1.4rem 2.6rem;color:#d9d6ef;max-width:72ch}deta
 @media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 /* ============ Leitor de música: botão flutuante ============ */
-#music{position:fixed;right:max(1.2rem,env(safe-area-inset-right));bottom:max(1.2rem,env(safe-area-inset-bottom));z-index:120;display:flex;flex-direction:column;align-items:flex-end;gap:.9rem}
+#music{position:fixed;left:max(1.2rem,env(safe-area-inset-left));bottom:max(1.2rem,env(safe-area-inset-bottom));z-index:120;display:flex;flex-direction:column;align-items:flex-start;gap:.9rem}
 #mbtn{position:relative;display:grid;place-items:center;width:58px;height:58px;padding:0;border-radius:50%;border:1px solid var(--gold);background:radial-gradient(circle at 30% 25%,#3d2c86,#0b0d28 72%);color:var(--gold);cursor:pointer;box-shadow:0 10px 30px #000b,0 0 26px #a24bff44;transition:transform .35s,box-shadow .35s}
 #mbtn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 14px 36px #000b,0 0 34px #a98bff77}#mbtn:active{transform:scale(.96)}
 #mbtn svg{width:24px;height:24px}
