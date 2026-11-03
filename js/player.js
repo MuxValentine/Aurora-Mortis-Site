@@ -4,8 +4,8 @@ const I={play:ic('<path d="M8 5v14l11-7z"/>',1),pause:ic('<path d="M7 5h4v14H7zM
 sh:ic('<path d="M3 7h4l10 10h4M3 17h4l3-3M14 10l3-3h4M18 4l3 3-3 3M18 14l3 3-3 3"/>'),rp:ic('<path d="M17 2l4 4-4 4M3 11V9a3 3 0 013-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 01-3 3H3"/>'),
 vol:ic('<path d="M3 9v6h4l5 4V5L7 9zM16 8a5 5 0 010 8"/>'),sun:ic('<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>'),
 spk:ic('<path d="M12 2l2 8 8 2-8 2-2 8-2-8-8-2 8-2z"/>'),close:ic('<path d="M6 6l12 12M18 6L6 18"/>'),note:ic('<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>')};
-const st=Object.assign({i:0,t:0,play:false,shuf:false,rep:'all',vol:.6},JSON.parse(localStorage.kodaPlayer||'{}'));
-const save=()=>{st.t=a.currentTime||0;st.play=!a.paused;localStorage.kodaPlayer=JSON.stringify(st)};
+const st=Object.assign({i:0,t:0,play:false,shuf:false,rep:'all',vol:.6},JSON.parse(localStorage.kodaPlayerV2||'{}'));
+const save=()=>{st.t=a.currentTime||0;st.play=!a.paused;localStorage.kodaPlayerV2=JSON.stringify(st)};
 const nav=document.querySelector('.top');if(!nav)return;let tools=nav.querySelector('.tools');if(!tools){tools=document.createElement('div');tools.className='tools';nav.append(tools)}
 const hue=i=>(i*70+265)%360,fmt=s=>isFinite(s)?Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0'):'0:00';
 const th=(t,i)=>t.capa?`style="background:url(${t.capa}) center/cover"`:`style="--h:${hue(i)}"`;
