@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><filter id="g" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<path id="p" d="M103 2C101 70 104 140 102 198M31 177L181 24M6 114Q60 106 104 102L195 102M64 64L142 145M64 64l12 3M64 64l3 12M142 145l-12-3M142 145l-3-12M103 10C98 60 70 92 36 106M103 196C108 152 140 114 190 104M100 30C96 66 76 90 52 100"/>
+<path id="s" d="M0-7Q0 0 7 0Q0 0 0 7Q0 0-7 0Q0 0 0-7Z"/></defs>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#g)"><use href="#p" stroke="#b36bff" stroke-width="3.4" opacity=".6"/><use href="#p" stroke="#fff" stroke-width="1.3"/></g>
+<g filter="url(#g)"><g fill="#c99bff" transform="translate(82 21)"><circle r="4"/><circle cy="-6" r="3"/><circle cy="6" r="3"/><circle cx="-6" r="3"/><circle cx="6" r="3"/><circle r="2" fill="#fff"/></g>
+<g fill="#f3e6ff"><use href="#s" transform="translate(33 97)"/><use href="#s" transform="translate(61 137) scale(.8)"/></g>
+<g transform="translate(158 151)"><circle r="7" fill="#e9dcff"/><circle cx="-8" cy="-2" r="3.5" fill="#ff8a3c"/></g>
+<g fill="#6a35b8" opacity=".8"><circle cx="52" cy="78" r="5"/><circle cx="108" cy="80" r="5"/><circle cx="140" cy="88" r="4"/></g></g></svg>
