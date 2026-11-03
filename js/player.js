@@ -1,8 +1,3 @@
-// ===== CONFIG: edita aqui o nome, artista e (opcional) capa de cada faixa =====
-const TRACKS=[
- {title:'Faixa 1',artist:'Playlist do site',src:'assets/musica1.mp3'},
- {title:'Faixa 2',artist:'Playlist do site',src:'assets/musica2.mp3'},
- {title:'Faixa 3',artist:'Playlist do site',src:'assets/musica3.mp3'}]; // capa:'assets/images/capa.jpg' (opcional)
 (()=>{
 const ic=(d,f)=>`<svg viewBox="0 0 24 24" ${f?'fill="currentColor"':'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"'}>${d}</svg>`;
 const I={play:ic('<path d="M8 5v14l11-7z"/>',1),pause:ic('<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>',1),prev:ic('<path d="M6 5h2v14H6zM20 5v14L9 12z"/>',1),next:ic('<path d="M16 5h2v14h-2zM4 5l11 7L4 19z"/>',1),
@@ -47,7 +42,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!mp.hidden){mp.hidd
 addEventListener('pagehide',save);
 if('mediaSession'in navigator)[['play',play],['pause',()=>a.pause()],['nexttrack',next],['previoustrack',prev]].forEach(([k,f])=>navigator.mediaSession.setActionHandler(k,f));
 a.volume=st.vol;rng(q('#vl'),st.vol*100);q('#sh').classList.toggle('act',st.shuf);q('#rp').dataset.m=st.rep;q('#rp').classList.toggle('act',st.rep!=='off');
-load(Math.min(st.i,TRACKS.length-1),st.t);
+load(Number.isInteger(st.i)?Math.max(0,Math.min(st.i,TRACKS.length-1)):0,st.t);
 if(st.play)a.play().catch(()=>{const f=e=>{if(dock.contains(e.target))return;removeEventListener('pointerdown',f);play()};addEventListener('pointerdown',f)});
 // Ecrã de entrada (só na página inicial, uma vez por sessão)
 const g=document.getElementById('gate');
