@@ -19,3 +19,5 @@ do player e na miniatura da playlist. Faixas sem capa mantêm o símbolo padrão
 As duas primeiras músicas da playlist original foram removidas. As antigas
 faixas 3 a 8 passaram a ser as faixas 1 a 6; a última recebeu o áudio
 “O Poeta É um Fingidor”, de João Villaret.
+Depois, a faixa 2 dessa nova lista foi removida e sua capa passou para a
+faixa 1. A playlist atual contém as faixas 1, 3, 4, 5 e 6.
