@@ -7,25 +7,25 @@ const TRACKS = [
     "capa": "assets/images/capas/faixa1.png"
   },
   {
-    "title": "Faixa 3",
+    "title": "Faixa 2",
     "artist": "Playlist do site",
     "src": "assets/musica3.mp3",
     "capa": "assets/images/capas/faixa3.png"
   },
   {
-    "title": "Faixa 4",
+    "title": "Faixa 3",
     "artist": "Playlist do site",
     "src": "assets/musica4.mp3",
     "capa": "assets/images/capas/faixa4.png"
   },
   {
-    "title": "Faixa 5",
+    "title": "Faixa 4",
     "artist": "Playlist do site",
     "src": "assets/musica5.mp3",
     "capa": "assets/images/capas/faixa5.png"
   },
   {
-    "title": "Faixa 6",
+    "title": "Faixa 5",
     "artist": "Playlist do site",
     "src": "assets/musica6.mp3",
     "capa": "assets/images/capas/faixa6.png"
