@@ -38,7 +38,7 @@ details>div{padding:.2rem 1.5rem 1.4rem 2.6rem;color:#d9d6ef;max-width:72ch}deta
 .panel{position:relative;background:linear-gradient(#0c1030d9,#080a22d9);border:1px solid #a98bff30;border-radius:4px;padding:1.8rem;margin:1.6rem 0;box-shadow:0 0 60px #5b3cc422,inset 0 0 80px #0000004d}
 .panel::before,.panel::after{content:"";position:absolute;width:22px;height:22px;border:1px solid var(--gold);opacity:.8}.panel::before{left:-1px;top:-1px;border-right:0;border-bottom:0}.panel::after{right:-1px;bottom:-1px;border-left:0;border-top:0}
 .row{display:flex;gap:1.6rem;flex-wrap:wrap;margin:1.6rem 0 .4rem;justify-content:center}
-.tags{display:flex;flex-wrap:wrap;gap:.6rem}.tags span{padding:.1rem 1rem;border:1px solid var(--hair);border-radius:99px;background:#a98bff12;font-size:1.05rem}.tags span:nth-child(3n){border-color:#6fe8b655}
+.tags{display:flex;flex-wrap:wrap;gap:.6rem}.tags span{padding:.1rem 1rem;border:1px solid var(--hair);border-radius:99px;background:#a98bff12;font-size:1.05rem}.tags span.gosta{border-color:#6fe8b6;background:#6fe8b614;color:#c9fbe7}.tags span.nao{border-color:#ff5a7a;background:#ff5a7a14;color:#ffd0d9}.tagl{margin:1.4rem 0 .6rem;font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;opacity:.7}
 .tabpane[hidden]{display:none}.tabpane{animation:in .6s both}
 .quote2{border-left:1px solid var(--gold);padding-left:1.2rem;font:italic 400 1.4rem/1.5 var(--hd);margin-top:1.2rem;color:#f3ecff}
 #graph{position:relative;aspect-ratio:520/420;max-width:600px;margin:1rem auto}#graph svg{position:absolute;inset:0;width:100%;height:100%}#graph line{animation:dash 2.4s linear infinite;opacity:.7}@keyframes dash{to{stroke-dashoffset:-16}}
